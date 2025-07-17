@@ -1,0 +1,67 @@
+/* Signup Styles */
+.signup-container {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s ease;
+}
+.signup-form {
+  background: #fff;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(67,233,123,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 320px;
+  animation: popIn 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.signup-form h2 {
+  color: #43e97b;
+  margin-bottom: 0.5rem;
+}
+.signup-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #38f9d7;
+  border-radius: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.signup-form input:focus {
+  border: 1.5px solid #43e97b;
+}
+.signup-form button {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+}
+.signup-form button:hover {
+  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+  transform: scale(1.05);
+}
+.signup-link {
+  text-align: center;
+  font-size: 0.95rem;
+}
+.signup-link a {
+  color: #43e97b;
+  text-decoration: none;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popIn {
+  0% { transform: scale(0.7); }
+  100% { transform: scale(1); }
+}

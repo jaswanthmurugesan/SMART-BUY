@@ -1,0 +1,12 @@
+/* index.css - You can import this in main.jsx for global styles */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f6f6f6;
+  color: #22223b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', Arial, sans-serif;
+}
